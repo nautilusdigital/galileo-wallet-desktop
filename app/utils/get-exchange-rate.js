@@ -3,6 +3,7 @@ import { defineError } from 'ember-exex/error';
 import coinmarketcap from 'npm:coinmarketcap';
 import BigNumber from 'npm:bignumber.js';
 
+export const GALILEO = Symbol.for('GALILEO');
 export const NANO = Symbol.for('NANO');
 export const BTC = Symbol.for('BTC');
 export const USD = Symbol.for('USD');
@@ -10,6 +11,7 @@ export const EUR = Symbol.for('EUR');
 
 export const CURRENCIES = new Set([
   NANO,
+  GALILEO,
   BTC,
   USD,
   EUR,
