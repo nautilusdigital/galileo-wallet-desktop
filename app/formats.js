@@ -14,6 +14,11 @@ export default {
     },
   },
   number: {
+    GALILEO: {
+      style: 'currency',
+      currency: 'GALILEO',
+      maximumFractionDigits: 2,
+    },
     NANO: {
       style: 'currency',
       currency: 'NANO',
