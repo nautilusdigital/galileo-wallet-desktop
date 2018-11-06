@@ -45,6 +45,7 @@ status:
   unchecked: '未确认区块'
   peers: '点'
 balancePending: '正在加载账户余额'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: '美元'

@@ -45,6 +45,7 @@ status:
   unchecked: 'Blok Belum Diperiksa'
   peers: 'Teman Jaringan'
 balancePending: 'Saldo Tertunda'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'

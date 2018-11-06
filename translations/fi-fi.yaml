@@ -47,6 +47,7 @@ status:
   unchecked: 'Tarkistamattomat lohkot'
   peers: 'Vertaisia'
 balancePending: 'Saldo odottaa'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'

@@ -45,6 +45,7 @@ status:
   unchecked: 'Непроверени блокове'
   peers: 'Участници'
 balancePending: 'Баланс в изчакване'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'

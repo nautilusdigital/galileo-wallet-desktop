@@ -45,6 +45,7 @@ status:
   unchecked: 'Blocs non vérifiés'
   peers: 'Pairs'
 balancePending: 'Solde en attente'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'

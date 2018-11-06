@@ -69,6 +69,7 @@ status:
   unchecked: 'Unchecked Blocks'
   peers: 'Peers'
 balancePending: 'Balance Pending'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'

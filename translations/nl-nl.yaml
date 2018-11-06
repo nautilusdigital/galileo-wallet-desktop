@@ -45,6 +45,7 @@ status:
   unchecked: 'Ongecontroleerde blocks'
   peers: 'Peers'
 balancePending: 'Saldo in afwachting'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'

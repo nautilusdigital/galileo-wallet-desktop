@@ -45,6 +45,7 @@ status:
   unchecked: 'Neprovjereni Blokovi'
   peers: 'Peerovi'
 balancePending: 'Saldo na Čekanju'
+GALILEO: 'GALILEO'
 NANO: 'NANO'
 BTC: 'BTC'
 USD: 'USD'
