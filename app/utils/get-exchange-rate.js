@@ -17,7 +17,7 @@ export const CURRENCIES = new Set([
   EUR,
 ]);
 
-export const DEFAULT_CURRENCY = NANO;
+export const DEFAULT_CURRENCY = GALILEO;
 export const DEFAULT_EXCHANGE_RATE = 1;
 
 export const InvalidCurrencyError = defineError({
@@ -46,16 +46,7 @@ export default async function getExchangeRate(currency = DEFAULT_CURRENCY) {
     throw new InvalidCurrencyError({ params: { currency } });
   }
 
-  const asset = Symbol.keyFor(DEFAULT_CURRENCY);
-  const convert = Symbol.keyFor(currency).toLowerCase();
-  let ticker;
-  try {
-    ticker = await coinmarketcap.tickerByAsset(asset, { convert });
-  } catch (err) {
-    throw new RequestExchangeRateError().withPreviousError(err);
-  }
-
-  const value = ticker[`price_${convert}`];
+  const value = 1;
   let exchangeRate;
   try {
     exchangeRate = BigNumber(value);
