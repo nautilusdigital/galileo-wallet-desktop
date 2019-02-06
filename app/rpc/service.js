@@ -208,10 +208,12 @@ export default class RPCService extends Service {
   }
 
   send(wallet, source, destination, amount, id = generateId()) {
+    const xrb_destination = String(destination).replace(/^gal/, 'xrb');
+    
     return this.call(actions.SEND, {
       wallet,
       source,
-      destination,
+      destination: xrb_destination,
       amount,
       id,
     });
