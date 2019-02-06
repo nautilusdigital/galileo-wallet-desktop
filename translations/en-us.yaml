@@ -51,7 +51,7 @@ disagree: 'Disagree'
 legal:
   title: 'Terms and Conditions'
   disclaimer: >
-    Your use of this Nano Wallet application is subject to your agreement to all terms and
+    Your use of this Galileo Wallet application is subject to your agreement to all terms and
     conditions of the End User License Agreement and Privacy Policy linked below (collectively, the
     "Terms and Conditions"). Please tap the links below and read all Terms and Conditions carefully.
     By checking the boxes below and tapping "Agree," you acknowledge that you have read, understand
@@ -113,8 +113,8 @@ wallets:
       source: 'Source Account'
       search: 'Search for account'
       destination: 'Destination Account'
-      placeholder: 'Address (e.g. nano_...)'
-      amount: 'Amount (NANO)'
+      placeholder: 'Address (e.g. gal_...)'
+      amount: 'Amount (GALILEO)'
       insufficient: 'Amount is greater than total account balance'
     history:
       none: 'No history yet'
