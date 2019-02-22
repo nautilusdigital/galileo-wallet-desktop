@@ -1,3 +1,4 @@
+{{!--
 {{#bs-form model=(changeset (hash seed=seed representative=representative) ChangeRepresentativeValidations) onSubmit=(action onChangeRepresentative wallet) as |form|}}
   {{#form.element label=(t 'seed') property="seed" as |el|}}
     {{password-toggle inputId=el.id label=(t 'seed') value=el.value placeholder=(t 'unknown') readonly=true}}
@@ -14,7 +15,7 @@
 {{/bs-form}}
 
 <br>
-
+--}}
 {{#wallet-password wallet=wallet onSubmit=(action onChangePassword)}}
   {{#bs-button buttonType="submit" type="danger" icon="fa fa-key" class="w-100"}}
     {{t 'wallets.settings.changePassword'}}
