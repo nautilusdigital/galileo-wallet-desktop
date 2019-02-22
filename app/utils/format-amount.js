@@ -36,16 +36,22 @@ export default function formatAmount(intl, value, options = {}) {
   if (!maximumFractionDigits) {
     maximumFractionDigits = Math.min(20, Math.max(0, decimalPlaces));
   }
+  
+  let { minimumFractionDigits } = currencyFormats[currency] || {};
+  if (!minimumFractionDigits) {
+    minimumFractionDigits = 2;
+  }
 
   let { minimumIntegerDigits } = currencyFormats[currency] || {};
   if (!minimumIntegerDigits) {
     minimumIntegerDigits = Math.min(21, Math.max(1, product.precision(true) - decimalPlaces));
   }
-
+console.log('maximum decimal',maximumFractionDigits);
   const amount = intl.formatNumber(product, {
     locale,
     useGrouping,
     minimumIntegerDigits,
+    minimumFractionDigits,
     maximumFractionDigits,
   });
 
