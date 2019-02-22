@@ -20,7 +20,7 @@ export const UNITS = new Set([
   uxrb,
 ]);
 
-export const DEFAULT_UNIT = Mxrb;
+export const DEFAULT_UNIT = xrb;
 
 export const CONVERSION_FACTORS = new Map([
   [Gxrb, base10.pow(33)],
