@@ -9,9 +9,6 @@
         {{qr-code text=(to-galileo-prefix account.id) width=170 height=170}}
       {{/if}}
       <p class="balance">
-        <sup>
-          <img src="{{root-url "images/logo.svg"}}" alt="{{t 'GALILEO'}}">
-        </sup>
         {{format-amount account.balance}}
         <br>
         <sub>+{{format-amount account.pending}}</sub>
