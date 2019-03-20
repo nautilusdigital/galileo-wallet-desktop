@@ -1,4 +1,4 @@
-{{#let (changeset (hash label=settings.label representative=gal_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpiij4txtdo) ChangeAccountSettingsValidations) as |model|}}
+{{#let (changeset (hash label=settings.label representative='gal_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpiij4txtdo') ChangeAccountSettingsValidations) as |model|}}
   {{#bs-modal position='center' onHide=(action (optional onCancel)) as |modal|}}
     {{#modal.header}}
       <h4 class="modal-title">
@@ -14,7 +14,7 @@
         </div>
         {{#if hasOpenBlock}}
           {{#form.element controlType="text" label='Representative' property='representative'
-              minlength=64 maxlength=65 required=true pattern="^(xrb|nano|gal)(_|-)[13](?![lv])[a-z1-9]{59}$" as |el|}}
+              minlength=64 maxlength=65 required=true readonly=true pattern="^(xrb|nano|gal)(_|-)[13](?![lv])[a-z1-9]{59}$" as |el|}}
             {{el.control class="text-truncate text-monospace"}}
           {{/form.element}}
         {{/if}}
