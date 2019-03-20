@@ -10,7 +10,7 @@
       {{#bs-form model=model onSubmit=(action (queue (action 'save' model) (action (optional onSave))) account) as |form|}}
         <div class="form-group">
           <label>{{t 'account'}}</label>
-          {{account-address class="form-control-plaintext" value=account.id truncate=false}}
+          {{account-address class="form-control-plaintext" value=account.id truncate=true}}
         </div>
         {{#if hasOpenBlock}}
           {{#form.element controlType="text" label='Representative' property='representative'
